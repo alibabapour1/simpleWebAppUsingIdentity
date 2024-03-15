@@ -1,0 +1,30 @@
+﻿@model IList<string>
+
+@{
+    ViewData["Title"] = "UserRoles";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>User Roles </h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <td>Roles of :@ViewBag.Name</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+          <tr>
+              <td>
+                  @item
+              </td>
+          </tr>
+            
+        }
+    </tbody>
+
+
+
+</table>
